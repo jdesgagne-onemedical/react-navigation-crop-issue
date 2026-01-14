@@ -9,7 +9,17 @@ function ReactNavigationScreen() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={AppContent} />
+        <Stack.Screen 
+          name="RN Nav screen" 
+          component={AppContent}
+        />
+        <Stack.Screen 
+          name="Modal" 
+          component={AppContent}
+          options={{
+            presentation: 'modal',
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
